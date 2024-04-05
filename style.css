@@ -1,0 +1,149 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Overpass', sans-serif;
+ background-color: #f5f1ec; /* A light beige for the page background */
+}
+
+.banner {
+  background: url('banner.jpeg') no-repeat center center/cover;
+  color: #2e2e2e; /* Dark gray for better readability */
+  text-align: center;
+  padding: 100px 20px;
+}
+.banner h1 {
+  color: #a67b5b; /* Light brown color for the title */
+}
+
+.banner p {
+  color: #a67b5b; /* Light brown color for the subtitle */
+}
+
+h1, h2 {
+  font-family: 'Chivo', sans-serif;
+}
+
+.cta-button {
+  background-color: #d8c3a5; /* A deeper beige for the call-to-action button */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.best-brands {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ede9e4; 
+}
+
+.brand-cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.brand-card {
+  margin: 20px;
+  width: calc(33.333% - 40px);
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+  background-color: #ffffff; /* Pure white for the cards */
+}
+
+.brand-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #2e2e2e; /* Dark gray */
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+.brand-card {
+  position: relative;
+  text-align: center; /* Centers the text and images */
+  margin: 20px; /* Adds spacing around each card */
+  width: calc(33.333% - 40px); /* Adjusts the width for a 3-column layout */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px; /* Adds padding within each card */
+  display: flex;
+  flex-direction: column; /* Stacks images and text vertically */
+  align-items: center; /* Aligns items in the center */
+}
+
+.brand-image {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 15px; /* Separates the image from the text */
+}
+
+.brand-image img {
+  width: 100%;
+  height: auto; /* Maintains aspect ratio */
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* Ensures the hover image matches the base image size */
+  opacity: 0;
+}
+
+.brand-card:hover .hover-image {
+  opacity: 1;
+}
+
+
+.brand-title {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+  color: #ffffff; /* White text for high contrast */
+  position: absolute;
+  bottom: 0; /* Positions at the bottom of the card */
+  left: 0;
+  width: 100%; /* Ensures full width coverage */
+  text-align: center;
+  font-size: 1.2rem; /* Slightly larger font size for better readability */
+  padding: 10px 0; /* More vertical padding for better text separation */
+  font-family: 'Noto Sans KR', sans-serif; /* Maintains Korean aesthetic in typography */
+  z-index: 20; /* Keeps the title on top */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.brand-card:hover .brand_title {
+  transform: translateY(0%); /* Title moves down on hover */
+  background-color: rgba(0, 0, 0, 0.7); /* Darkens the background for better readability on hover */
+}
+
+.brand-card:hover .base-image {
+  opacity: 0; /* Hides the base image on hover */
+}
+
+.brand-card .brand_title {
+  /* Common styling for all brand titles */
+  font-weight: 700; /* Bold */
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+  text-transform: uppercase; /* Brand names often use uppercase for impact */
+}
+
+/* Individual brand styling */
+.brand-card:nth-child(1) .brand_title {
+  /* Nike */
+  font-family: 'Roboto', sans-serif;
+}
+
+.brand-card:nth-child(2) .brand_title {
+  /* Adidas */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.brand-card:nth-child(3) .brand_title {
+  /* New Balance */
+  font-family: 'Open Sans', sans-serif;
+}
